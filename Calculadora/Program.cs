@@ -77,3 +77,19 @@ switch (operacao)
         Console.WriteLine("Opção inserida invalida");
         break;
 };
+
+
+Console.WriteLine("Repetição: ");
+string num = Console.ReadLine();
+var numConvertido = Convert.ToInt32(num);
+
+
+
+for (int i = 1; numConvertido >= i; i++)
+{
+    Console.WriteLine($"Digite o {i} valor: ");
+    string valor = Console.ReadLine();
+    double convertValor = Convert.ToDouble(valor);
+
+    Console.WriteLine(convertValor);
+}
